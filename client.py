@@ -13,9 +13,9 @@ def criar_tarefa():
     try:
         r = requests.post(BASE, json=payload)
         if r.status_code == 201:
-            print("✅ Criada:", r.json())
+            print("Criada:", r.json())
         else:
-            print("❌ Erro:", r.status_code, r.text)
+            print("Erro:", r.status_code, r.text)
     except requests.RequestException as e:
         print("Erro de conexão:", e)
 
@@ -63,9 +63,9 @@ def atualizar_tarefa():
     try:
         r = requests.put(f"{BASE}/{tid}", json=payload)
         if r.status_code == 200:
-            print("✅ Atualizada:", r.json())
+            print("Atualizada:", r.json())
         else:
-            print("❌ Erro:", r.status_code, r.text)
+            print("Erro:", r.status_code, r.text)
     except requests.RequestException as e:
         print("Erro de conexão:", e)
 
@@ -77,9 +77,9 @@ def deletar_tarefa():
     try:
         r = requests.delete(f"{BASE}/{tid}")
         if r.status_code == 200:
-            print("✅", r.json().get('message'))
+            print(r.json().get('message'))
         else:
-            print("❌ Erro:", r.status_code, r.text)
+            print("Erro:", r.status_code, r.text)
     except requests.RequestException as e:
         print("Erro de conexão:", e)
 
