@@ -50,12 +50,12 @@ CREATE TABLE IF NOT EXISTS tarefas (
 
 - Programa de linha de comando que usa a biblioteca `requests` para consumir a API.
 - Oferece um **menu interativo** com as opções:
-  1 Criar tarefa  
-  2 Listar tarefas  
-  3 Visualizar tarefa por ID  
-  4 Atualizar tarefa  
-  5 Deletar tarefa  
-  0 Sair  
+  1 - Criar tarefa  
+  2 - Listar tarefas  
+  3 - Visualizar tarefa por ID  
+  4 - Atualizar tarefa  
+  5 - Deletar tarefa  
+  0 - Sair  
 
 ---
 
